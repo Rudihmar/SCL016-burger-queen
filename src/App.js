@@ -1,17 +1,23 @@
-import Initial from '../src/components/Initial';
-// import background from '../src/img/background.jpg';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Init from "./components/Init";
+import Tablets from "./components/Tablets";
+import Kitchen from "./components/Kitchen";
+import NotFound from "./components/Notfound";
+import Menu from "./components/Menu";
 
-function App() {
+
+const App = () => {
   return (
-    <div className= "App">
-      <header>
-        
-      </header>
-      <body>
-      <Initial></Initial>
-      </body>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Init} />
+        <Route exact path="/Tablets" component={Tablets} />
+        <Route exact path="/Menu" component={Menu}/>
+        <Route exact path="/Kitchen" component={Kitchen} />
+        <Route component={NotFound}/>
+      </Switch>
+    </BrowserRouter>
   );
-}
-
+};
 export default App;
