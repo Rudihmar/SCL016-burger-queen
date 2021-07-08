@@ -1,7 +1,7 @@
 import React from "react";
 //PRODUCTOS
 
-const Productos = ({ productos }) => {
+const Productos = ({ productos, agregarProductoAComanda }) => {
   return (
     <div>
       <h3>PRODUCTOS</h3>
@@ -10,7 +10,8 @@ const Productos = ({ productos }) => {
           return (
             <div key={index}>
               <p>{producto.nombre}</p>
-              <button>Agregar al Carrito</button>
+              <button onClick={() => agregarProductoAComanda(producto.id, producto.nombre)}>Agregar al Carrito</button>
+              
             </div>
           );
         })}
