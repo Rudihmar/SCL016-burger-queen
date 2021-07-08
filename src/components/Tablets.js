@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
-const Tablets= () => {
+const Tablets = () => {
   return (
     <div className="container">
       <Navbar />
@@ -17,5 +17,5 @@ const Tablets= () => {
       </div>
     </div>
   );
-}
+};
 export default Tablets;
