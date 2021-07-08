@@ -1,29 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
-const Tablets = () => (
-<div className="container">  
-    <div className="row" >
-      <div className="col-4">
-        <Link to="/Menu"> 1 </Link>
-      </div>
-      <div className="col-4">
-        <Link to="/Menu"> 2 </Link>
-      </div>
-      <div className="col-4">
-        <Link to="/Menu"> 3 </Link>
-      </div>
-      <div className="col-4">
-        <Link to="/Menu"> 4 </Link>
-      </div>
-      <div className="col-4">
-        <Link to="/Menu"> 5 </Link>
-      </div>
-      <div className="col-4">
-        <Link to="/Menu"> 6 </Link>
+const Tablets= () => {
+  return (
+    <div className="container">
+      <Navbar />
+      <div className="contenedorMesas">
+        {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div className="buttonTable">
+            <Link className="tableNumber" to="/Menu">
+              Mesa {i}{" "}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
-</div>
-);
-
+  );
+}
 export default Tablets;

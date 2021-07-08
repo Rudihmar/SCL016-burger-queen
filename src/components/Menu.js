@@ -1,10 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navbar from "./Navbar";
+import ClientName from "./ClientName";
+import Productos from "./Productos";
 
 
 
-const Menu = () => {
+
+
+const Menu = ({productos}) => {
+
     return(
-      <h1>Estoy en Pedidos</h1>
+      <Fragment>
+        <Navbar/>
+        <ClientName/>
+        <Productos productos={productos} />
+
+      </Fragment>
     )
   }
   export default Menu;
