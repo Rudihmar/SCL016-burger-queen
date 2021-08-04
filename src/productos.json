@@ -2,31 +2,31 @@
     {
       "nombre": "Arepa Jamon y Queso",
       "precio": 1600,
-      "cantidad": 1
+      "id": 1
     },
     {
       "nombre": "Arepa Reina Pepiada",
       "precio": 3000,
-      "cantidad": 1
+      "id": 2
     },
     {
       "nombre": "Arepa Pelua",
       "precio": 3000,
-      "cantidad": 1
+      "id": 3
     },
     {
       "nombre": "Agua",
       "precio": 500,
-      "cantidad": 1
+      "id": 4
     },
     {
       "nombre": "Batido de Fresa",
       "precio": 1900,
-      "cantidad": 1
+      "id": 5
     },
     {
       "nombre": "Jugo de Parchita",
       "precio": 1000,
-      "cantidad": 1
+      "id": 6
     }
   ]

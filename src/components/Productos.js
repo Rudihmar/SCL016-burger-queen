@@ -10,7 +10,7 @@ const Productos = ({ productos, agregarProductoAComanda }) => {
           return (
             <div key={index}>
               <p>{producto.nombre}</p>
-              <button onClick={() => agregarProductoAComanda(producto.id, producto.nombre)}>Agregar al Carrito</button>
+              <button onClick={() => agregarProductoAComanda(producto.id, producto.nombre)}>Agregar</button>
               
             </div>
           );

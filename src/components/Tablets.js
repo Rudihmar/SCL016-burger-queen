@@ -8,7 +8,7 @@ const Tablets = () => {
       <Navbar />
       <div className="contenedorMesas">
         {[1, 2, 3, 4, 5, 6].map((i) => (
-          <div className="buttonTable">
+          <div key={i} className="buttonTable">
             <Link className="tableNumber" to="/Menu">
               Mesa {i}{" "}
             </Link>
